@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import BmiCalculator from './components/BMI';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='row justify-content-center'>
+        <div className='col-lg-6 col-lg-offset-3'>
+          <h1 style={{color: 'white', textAlign: 'center'}}>BMI Calculator React Hooks app</h1>
+          <BmiCalculator />
+        </div>
+      </div>
     </div>
   );
 }
